@@ -22,7 +22,7 @@ fi
 
 OUT_FILE=$1
 if [ -z $1 ]; then
-	OUT_FILE=l4docs.pdf
+	OUT_FILE=laravel.pdf
 fi
 shift
 PANDOC_ARGS="$*"
