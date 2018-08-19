@@ -14,7 +14,7 @@
 After you have completed the [installation](#installation) of required libraries & cloned the repo, you can build offline documentation for latest version of laravel by simply issueing following command from within the cloned directory.
 
 ```bash
-$ /generate.sh
+$ ./generate.sh
 ```
 
 With above command the documentation will be generated in **pdf** format with name **laravel.pdf** in the same directory. For most cases this will suffice your need of using this tool, but if not, then move on...
@@ -31,13 +31,15 @@ To know more about the supported formats see explanation of **-t** && **-o** opt
 
 Additionally you can pass any [options](http://johnmacfarlane.net/pandoc/README.html#options) that pandoc supports to control or fine tune the generated document as per your need. For example, the following command will generate an **html5** document instead of **html4** (which is default for html output)
 
-```sh
+```bash
 $ ./generate -t html5
 ```
 
 # Customization
 
 To control the output of generated files, this tool uses [pandoc templates](http://johnmacfarlane.net/pandoc/README.html#templates) some default templates available from https://github.com/jgm/pandoc-templates as a git submodule. If you have the knowledge of customizing those templates, feel free to hack & twek the existing templates to meet your needs. Also for a comprehensive documentation of pandoc, please refer to the [github repo](https://github.com/jgm/pandoc) for pandoc.
+
+This is project came to existance due to dead repo laravel offline docs generator
 
 # Contributing
 
